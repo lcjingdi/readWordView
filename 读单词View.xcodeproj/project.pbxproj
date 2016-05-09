@@ -13,6 +13,13 @@
 		1F54193B1CDA36AA0063EC6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5419391CDA36AA0063EC6E /* Main.storyboard */; };
 		1F54193D1CDA36AA0063EC6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F54193C1CDA36AA0063EC6E /* Assets.xcassets */; };
 		1F5419401CDA36AA0063EC6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F54193E1CDA36AA0063EC6E /* LaunchScreen.storyboard */; };
+		1F5419481CDA4BB00063EC6E /* Resources.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F5419471CDA4BB00063EC6E /* Resources.plist */; };
+		1F54194B1CDA4C2E0063EC6E /* ReadWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54194A1CDA4C2E0063EC6E /* ReadWordView.m */; };
+		1F5419511CDA512C0063EC6E /* WordHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419501CDA512C0063EC6E /* WordHeaderView.m */; };
+		1F5419771CDAB0A90063EC6E /* ReadWordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419761CDAB0A90063EC6E /* ReadWordCell.m */; };
+		1F54197A1CDAB1750063EC6E /* WordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419791CDAB1750063EC6E /* WordModel.m */; };
+		1F6B7E211CDAF7CA00F006FB /* ReadWordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6B7E201CDAF7CA00F006FB /* ReadWordCell.xib */; };
+		1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F83A2431CDC6BE2001C364F /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,18 @@
 		1F54193C1CDA36AA0063EC6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F54193F1CDA36AA0063EC6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F5419411CDA36AA0063EC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5419471CDA4BB00063EC6E /* Resources.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Resources.plist; sourceTree = "<group>"; };
+		1F5419491CDA4C2E0063EC6E /* ReadWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadWordView.h; sourceTree = "<group>"; };
+		1F54194A1CDA4C2E0063EC6E /* ReadWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadWordView.m; sourceTree = "<group>"; };
+		1F54194F1CDA512C0063EC6E /* WordHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordHeaderView.h; sourceTree = "<group>"; };
+		1F5419501CDA512C0063EC6E /* WordHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordHeaderView.m; sourceTree = "<group>"; };
+		1F5419751CDAB0A90063EC6E /* ReadWordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadWordCell.h; sourceTree = "<group>"; };
+		1F5419761CDAB0A90063EC6E /* ReadWordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadWordCell.m; sourceTree = "<group>"; };
+		1F5419781CDAB1750063EC6E /* WordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordModel.h; sourceTree = "<group>"; };
+		1F5419791CDAB1750063EC6E /* WordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordModel.m; sourceTree = "<group>"; };
+		1F6B7E201CDAF7CA00F006FB /* ReadWordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadWordCell.xib; sourceTree = "<group>"; };
+		1F83A2421CDC6BE2001C364F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1F83A2431CDC6BE2001C364F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +77,18 @@
 		1F54192F1CDA36AA0063EC6E /* 读单词View */ = {
 			isa = PBXGroup;
 			children = (
-				1F5419331CDA36AA0063EC6E /* AppDelegate.h */,
-				1F5419341CDA36AA0063EC6E /* AppDelegate.m */,
-				1F5419361CDA36AA0063EC6E /* ViewController.h */,
-				1F5419371CDA36AA0063EC6E /* ViewController.m */,
-				1F5419391CDA36AA0063EC6E /* Main.storyboard */,
-				1F54193C1CDA36AA0063EC6E /* Assets.xcassets */,
-				1F54193E1CDA36AA0063EC6E /* LaunchScreen.storyboard */,
-				1F5419411CDA36AA0063EC6E /* Info.plist */,
+				1F83A2421CDC6BE2001C364F /* UIView+Extension.h */,
+				1F83A2431CDC6BE2001C364F /* UIView+Extension.m */,
+				1F5419491CDA4C2E0063EC6E /* ReadWordView.h */,
+				1F54194A1CDA4C2E0063EC6E /* ReadWordView.m */,
+				1F5419781CDAB1750063EC6E /* WordModel.h */,
+				1F5419791CDAB1750063EC6E /* WordModel.m */,
+				1F54194F1CDA512C0063EC6E /* WordHeaderView.h */,
+				1F5419501CDA512C0063EC6E /* WordHeaderView.m */,
+				1F5419471CDA4BB00063EC6E /* Resources.plist */,
+				1F5419751CDAB0A90063EC6E /* ReadWordCell.h */,
+				1F5419761CDAB0A90063EC6E /* ReadWordCell.m */,
+				1F6B7E201CDAF7CA00F006FB /* ReadWordCell.xib */,
 				1F5419301CDA36AA0063EC6E /* Supporting Files */,
 			);
 			path = "读单词View";
@@ -74,6 +97,14 @@
 		1F5419301CDA36AA0063EC6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F5419331CDA36AA0063EC6E /* AppDelegate.h */,
+				1F5419341CDA36AA0063EC6E /* AppDelegate.m */,
+				1F5419361CDA36AA0063EC6E /* ViewController.h */,
+				1F5419371CDA36AA0063EC6E /* ViewController.m */,
+				1F5419391CDA36AA0063EC6E /* Main.storyboard */,
+				1F54193C1CDA36AA0063EC6E /* Assets.xcassets */,
+				1F54193E1CDA36AA0063EC6E /* LaunchScreen.storyboard */,
+				1F5419411CDA36AA0063EC6E /* Info.plist */,
 				1F5419311CDA36AA0063EC6E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -136,9 +167,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5419481CDA4BB00063EC6E /* Resources.plist in Resources */,
 				1F5419401CDA36AA0063EC6E /* LaunchScreen.storyboard in Resources */,
 				1F54193D1CDA36AA0063EC6E /* Assets.xcassets in Resources */,
 				1F54193B1CDA36AA0063EC6E /* Main.storyboard in Resources */,
+				1F6B7E211CDAF7CA00F006FB /* ReadWordCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5419771CDAB0A90063EC6E /* ReadWordCell.m in Sources */,
+				1F54194B1CDA4C2E0063EC6E /* ReadWordView.m in Sources */,
 				1F5419381CDA36AA0063EC6E /* ViewController.m in Sources */,
+				1F54197A1CDAB1750063EC6E /* WordModel.m in Sources */,
+				1F5419511CDA512C0063EC6E /* WordHeaderView.m in Sources */,
 				1F5419351CDA36AA0063EC6E /* AppDelegate.m in Sources */,
+				1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */,
 				1F5419321CDA36AA0063EC6E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,8 +302,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "读单词View/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lcjingdi.---View";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxoo.readWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -275,8 +314,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "读单词View/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lcjingdi.---View";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxoo.readWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -300,6 +340,7 @@
 				1F5419461CDA36AA0063EC6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
