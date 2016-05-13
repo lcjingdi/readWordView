@@ -20,6 +20,7 @@
 		1F5419771CDAB0A90063EC6E /* ReadWordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419761CDAB0A90063EC6E /* ReadWordCell.m */; };
 		1F54197A1CDAB1750063EC6E /* WordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419791CDAB1750063EC6E /* WordModel.m */; };
 		1F6B7E211CDAF7CA00F006FB /* ReadWordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6B7E201CDAF7CA00F006FB /* ReadWordCell.xib */; };
+		1F6C1F7B1CE58118001EC54C /* EKWButtonSwim.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C1F7A1CE58118001EC54C /* EKWButtonSwim.m */; };
 		1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F83A2431CDC6BE2001C364F /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		1F5419781CDAB1750063EC6E /* WordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordModel.h; sourceTree = "<group>"; };
 		1F5419791CDAB1750063EC6E /* WordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordModel.m; sourceTree = "<group>"; };
 		1F6B7E201CDAF7CA00F006FB /* ReadWordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadWordCell.xib; sourceTree = "<group>"; };
+		1F6C1F791CE58118001EC54C /* EKWButtonSwim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKWButtonSwim.h; sourceTree = "<group>"; };
+		1F6C1F7A1CE58118001EC54C /* EKWButtonSwim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKWButtonSwim.m; sourceTree = "<group>"; };
 		1F83A2421CDC6BE2001C364F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		1F83A2431CDC6BE2001C364F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +67,8 @@
 		1F1C6D0C1CE55D6500EBF79A /* ListView */ = {
 			isa = PBXGroup;
 			children = (
+				1F6C1F791CE58118001EC54C /* EKWButtonSwim.h */,
+				1F6C1F7A1CE58118001EC54C /* EKWButtonSwim.m */,
 				1F83A2421CDC6BE2001C364F /* UIView+Extension.h */,
 				1F83A2431CDC6BE2001C364F /* UIView+Extension.m */,
 				1F5419491CDA4C2E0063EC6E /* ReadWordView.h */,
@@ -212,6 +217,7 @@
 				1F5419351CDA36AA0063EC6E /* AppDelegate.m in Sources */,
 				1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */,
 				1F5419321CDA36AA0063EC6E /* main.m in Sources */,
+				1F6C1F7B1CE58118001EC54C /* EKWButtonSwim.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
