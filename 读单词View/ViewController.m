@@ -9,11 +9,13 @@
 #import "ViewController.h"
 #import "ReadWordView.h"
 #import "EKWAudioManager.h"
+#import "ListView.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray<WordModel *> *array;
-@property (nonatomic, strong) ReadWordView *readView;
+//@property (nonatomic, strong) ReadWordView *readView;
 @property (nonatomic, assign) int bbb;
+@property (nonatomic, strong) ListView *listView;
 @end
 
 @implementation ViewController
@@ -21,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.readView];
+    [self.view addSubview:self.listView];
     self.bbb = 10;
 }
 
@@ -46,22 +48,28 @@
     
     
 }
-
-- (ReadWordView *)readView {
-    if (_readView == nil) {
-
-        _readView = [[ReadWordView alloc] initWithWordsModel:self.array originalButtonClick:^(NSInteger index) {
-           
-            NSLog(@"originalButtonClick%ld", (long)index);
-        } recordButtonClick:^(NSInteger index) {
-            NSLog(@"recordButtonClick%ld", (long)index);
-        } replayButtonClick:^(NSInteger index) {
-            NSLog(@"replayButtonClick%ld", (long)index);
-        }];
-        _readView.frame = CGRectMake(20, 20, [UIScreen mainScreen].bounds.size.width - 40, 400);
+- (ListView *)listView {
+    if (_listView == nil) {
+        
+        _listView = [[ListView alloc] initWithFrame:CGRectMake(20, 20, [UIScreen mainScreen].bounds.size.width - 40, 400) model:self.array type:PlayModeAutomatic];
     }
-    return _readView;
+    return _listView;
 }
+//- (ReadWordView *)readView {
+//    if (_readView == nil) {
+//
+//        _readView = [[ReadWordView alloc] initWithWordsModel:self.array originalButtonClick:^(NSInteger index) {
+//           
+//            NSLog(@"originalButtonClick%ld", (long)index);
+//        } recordButtonClick:^(NSInteger index) {
+//            NSLog(@"recordButtonClick%ld", (long)index);
+//        } replayButtonClick:^(NSInteger index) {
+//            NSLog(@"replayButtonClick%ld", (long)index);
+//        }];
+//        _readView.frame = CGRectMake(20, 20, [UIScreen mainScreen].bounds.size.width - 40, 400);
+//    }
+//    return _readView;
+//}
 
 - (NSArray *)array {
     if (_array == nil) {

@@ -17,7 +17,7 @@
 @end
 
 @interface WordHeaderView : UITableViewHeaderFooterView
-+ (instancetype)headerViewWithTableView:(UITableView *)tableView;
+//+ (instancetype)headerViewWithTableView:(UITableView *)tableView;
 
 @property (nonatomic, weak) id<WordHeaderViewDelegate> delegate;
 

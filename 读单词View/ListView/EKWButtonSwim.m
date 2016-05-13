@@ -75,7 +75,7 @@
         
         self.progressLayer.strokeEnd = progress;
     }];
-
+    
 }
 
 - (void)setProgressColor:(UIColor *)progressColor
@@ -107,9 +107,9 @@
 //- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 //{
 //    UIView *hitView = [super hitTest:point withEvent:event];
-//    
+//
 //    if (hitView == self){
-//        
+//
 //        return nil;
 //    }
 //    else{
@@ -129,9 +129,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-         [self setup];
+        [self setup];
     }
-   
+    
     return  self;
 }
 
@@ -146,33 +146,40 @@
     self.currentValue = 0.0;
     
     self.lineColor = [UIColor colorWithRed:183/255.0 green:1 blue:177/255.0 alpha:1];
-
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-    __block CGFloat cProgress = 0.0;
-    self.progress = cProgress;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(executeSimpleBlock:) userInfo:^{
-        if (cProgress == 0.0) {
-            if (self.delegate && [self.delegate respondsToSelector:@selector(beginAnimation)]) {
-                [self.delegate beginAnimation];
+    if (self.progress >= 0.1) {
+        // 清零
+        self.progress = 0.0f;
+        [self.timer invalidate];
+        self.timer = nil;
+    } else {
+        __block CGFloat cProgress = 0.0;
+        self.progress = cProgress;
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(executeSimpleBlock:) userInfo:^{
+            if (cProgress == 0.0) {
+                if (self.delegate && [self.delegate respondsToSelector:@selector(beginAnimation)]) {
+                    [self.delegate beginAnimation];
+                }
             }
-        }
-        cProgress += 0.1;
-        CGFloat xxooProgress = cProgress / 10.0;
-        if (xxooProgress <= 1) {
-            self.progress = xxooProgress;
-        } else {
-            [self.timer invalidate];
-            self.timer = nil;
-            if (self.delegate && [self.delegate respondsToSelector:@selector(beginAnimation)]) {
-                [self.delegate endAnimation];
+            cProgress += 0.1;
+            CGFloat xxooProgress = cProgress / 10.0;
+            if (xxooProgress <= 1) {
+                self.progress = xxooProgress;
+            } else {
+                [self.timer invalidate];
+                self.timer = nil;
+                if (self.delegate && [self.delegate respondsToSelector:@selector(beginAnimation)]) {
+                    [self.delegate endAnimation];
+                }
             }
-        }
-        
-    } repeats:YES];
-    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+            
+        } repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    }
 }
 - (void)executeSimpleBlock:(NSTimer *)inTimer {
     void (^block)() = (void (^)())[inTimer userInfo];

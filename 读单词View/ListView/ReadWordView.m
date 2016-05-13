@@ -134,6 +134,7 @@ typedef void (^ButtonClickBlock)(NSInteger);
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     WordHeaderView *view = [[WordHeaderView alloc] init];
+    view.contentView.backgroundColor = [UIColor whiteColor];
     view.tag = section;
     view.model = self.modelsArray[section];
     view.delegate = self;

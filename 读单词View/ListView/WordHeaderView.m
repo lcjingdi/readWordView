@@ -18,16 +18,16 @@
 
 @implementation WordHeaderView
 
-+ (instancetype)headerViewWithTableView:(UITableView *)tableView {
-    static NSString *identifier = @"header";
-    
-    WordHeaderView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identifier];
-    
-    if (view == nil) {
-        view = [[WordHeaderView alloc] initWithReuseIdentifier:identifier];
-    }
-    return view;
-}
+//+ (instancetype)headerViewWithTableView:(UITableView *)tableView {
+//    static NSString *identifier = @"header";
+//    
+//    WordHeaderView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identifier];
+//    
+//    if (view == nil) {
+//        view = [[WordHeaderView alloc] initWithReuseIdentifier:identifier];
+//    }
+//    return view;
+//}
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {

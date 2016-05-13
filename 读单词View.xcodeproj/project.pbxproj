@@ -21,6 +21,7 @@
 		1F6B7E211CDAF7CA00F006FB /* ReadWordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6B7E201CDAF7CA00F006FB /* ReadWordCell.xib */; };
 		1F6C1F7B1CE58118001EC54C /* EKWButtonSwim.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C1F7A1CE58118001EC54C /* EKWButtonSwim.m */; };
 		1F6C1F811CE58A26001EC54C /* EKWAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C1F801CE58A26001EC54C /* EKWAudioManager.m */; };
+		1F6C1F841CE5991C001EC54C /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C1F831CE5991C001EC54C /* ListView.m */; };
 		1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F83A2431CDC6BE2001C364F /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		1F6C1F7A1CE58118001EC54C /* EKWButtonSwim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKWButtonSwim.m; sourceTree = "<group>"; };
 		1F6C1F7F1CE58A26001EC54C /* EKWAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKWAudioManager.h; sourceTree = "<group>"; };
 		1F6C1F801CE58A26001EC54C /* EKWAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKWAudioManager.m; sourceTree = "<group>"; };
+		1F6C1F821CE5991C001EC54C /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
+		1F6C1F831CE5991C001EC54C /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		1F83A2421CDC6BE2001C364F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		1F83A2431CDC6BE2001C364F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +70,8 @@
 		1F1C6D0C1CE55D6500EBF79A /* ListView */ = {
 			isa = PBXGroup;
 			children = (
+				1F6C1F821CE5991C001EC54C /* ListView.h */,
+				1F6C1F831CE5991C001EC54C /* ListView.m */,
 				1F6C1F791CE58118001EC54C /* EKWButtonSwim.h */,
 				1F6C1F7A1CE58118001EC54C /* EKWButtonSwim.m */,
 				1F83A2421CDC6BE2001C364F /* UIView+Extension.h */,
@@ -215,6 +220,7 @@
 				1F54197A1CDAB1750063EC6E /* WordModel.m in Sources */,
 				1F5419511CDA512C0063EC6E /* WordHeaderView.m in Sources */,
 				1F5419351CDA36AA0063EC6E /* AppDelegate.m in Sources */,
+				1F6C1F841CE5991C001EC54C /* ListView.m in Sources */,
 				1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */,
 				1F5419321CDA36AA0063EC6E /* main.m in Sources */,
 				1F6C1F7B1CE58118001EC54C /* EKWButtonSwim.m in Sources */,
