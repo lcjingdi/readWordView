@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1C6D101CE55EAE00EBF79A /* AudioPlayTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1C6D0F1CE55EAE00EBF79A /* AudioPlayTool.m */; };
 		1F5419321CDA36AA0063EC6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419311CDA36AA0063EC6E /* main.m */; };
 		1F5419351CDA36AA0063EC6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419341CDA36AA0063EC6E /* AppDelegate.m */; };
 		1F5419381CDA36AA0063EC6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419371CDA36AA0063EC6E /* ViewController.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F1C6D0E1CE55EAE00EBF79A /* AudioPlayTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayTool.h; sourceTree = "<group>"; };
+		1F1C6D0F1CE55EAE00EBF79A /* AudioPlayTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayTool.m; sourceTree = "<group>"; };
 		1F54192D1CDA36AA0063EC6E /* 读单词View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "读单词View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5419311CDA36AA0063EC6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5419331CDA36AA0063EC6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 		1F1C6D0D1CE55DC200EBF79A /* AudioTool */ = {
 			isa = PBXGroup;
 			children = (
+				1F1C6D0E1CE55EAE00EBF79A /* AudioPlayTool.h */,
+				1F1C6D0F1CE55EAE00EBF79A /* AudioPlayTool.m */,
 			);
 			path = AudioTool;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				1F54194B1CDA4C2E0063EC6E /* ReadWordView.m in Sources */,
 				1F5419381CDA36AA0063EC6E /* ViewController.m in Sources */,
 				1F54197A1CDAB1750063EC6E /* WordModel.m in Sources */,
+				1F1C6D101CE55EAE00EBF79A /* AudioPlayTool.m in Sources */,
 				1F5419511CDA512C0063EC6E /* WordHeaderView.m in Sources */,
 				1F5419351CDA36AA0063EC6E /* AppDelegate.m in Sources */,
 				1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */,

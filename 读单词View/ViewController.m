@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ReadWordView.h"
+#import "AudioPlayTool.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSArray<WordModel *> *array;
@@ -26,8 +27,23 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    ((WordModel*)self.array[2]).score = @"99";
-    [self.readView refreshData];
+//    ((WordModel*)self.array[2]).score = @"99";
+//    [self.readView refreshData];
+    
+    [AudioPlayTool playOriginalSoundWithUrl:[NSURL URLWithString:@"123"] completion:^(BOOL finished) {
+        NSLog(@"读完了");
+    }];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [AudioPlayTool playRecordSoundWithUrl:[NSURL URLWithString:@"333"] completion:^(BOOL finished) {
+            NSLog(@"录音播放成功");
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [AudioPlayTool recordingWithURL:[NSURL URLWithString:@"123"] completion:^(BOOL isSuccess) {
+                    NSLog(@"%@", @"录音成功");
+                }];
+            });
+        }];
+    });
+    
     
 }
 
