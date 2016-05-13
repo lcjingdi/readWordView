@@ -1,12 +1,3 @@
-
-//
-//  EKWPersonVC.m
-//  EKWStudent
-//
-//  Created by chen on 14-7-11.
-//  Copyright (c) 2014年 ekwing. All rights reserved.
-//
-
 #import "EKWButtonSwim.h"
 #import <QuartzCore/CALayer.h>
 

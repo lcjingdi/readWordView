@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-al-XCO">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-al-XCO" customClass="EKWButtonSwim">
                         <rect key="frame" x="73" y="-1" width="45" height="46"/>
                         <state key="normal" title="Button" image="listen"/>
                         <connections>
@@ -53,7 +53,7 @@
                     <constraint firstItem="Shu-al-XCO" firstAttribute="height" secondItem="Wc7-5v-g9Y" secondAttribute="height" id="p1J-uT-qX4"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="317" y="314.5"/>
+            <point key="canvasLocation" x="388" y="312.5"/>
         </tableViewCell>
     </objects>
     <resources>

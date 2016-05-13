@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F1C6D101CE55EAE00EBF79A /* AudioPlayTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1C6D0F1CE55EAE00EBF79A /* AudioPlayTool.m */; };
 		1F5419321CDA36AA0063EC6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419311CDA36AA0063EC6E /* main.m */; };
 		1F5419351CDA36AA0063EC6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419341CDA36AA0063EC6E /* AppDelegate.m */; };
 		1F5419381CDA36AA0063EC6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419371CDA36AA0063EC6E /* ViewController.m */; };
@@ -21,12 +20,11 @@
 		1F54197A1CDAB1750063EC6E /* WordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5419791CDAB1750063EC6E /* WordModel.m */; };
 		1F6B7E211CDAF7CA00F006FB /* ReadWordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6B7E201CDAF7CA00F006FB /* ReadWordCell.xib */; };
 		1F6C1F7B1CE58118001EC54C /* EKWButtonSwim.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C1F7A1CE58118001EC54C /* EKWButtonSwim.m */; };
+		1F6C1F811CE58A26001EC54C /* EKWAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C1F801CE58A26001EC54C /* EKWAudioManager.m */; };
 		1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F83A2431CDC6BE2001C364F /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F1C6D0E1CE55EAE00EBF79A /* AudioPlayTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayTool.h; sourceTree = "<group>"; };
-		1F1C6D0F1CE55EAE00EBF79A /* AudioPlayTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayTool.m; sourceTree = "<group>"; };
 		1F54192D1CDA36AA0063EC6E /* 读单词View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "读单词View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5419311CDA36AA0063EC6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5419331CDA36AA0063EC6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		1F6B7E201CDAF7CA00F006FB /* ReadWordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadWordCell.xib; sourceTree = "<group>"; };
 		1F6C1F791CE58118001EC54C /* EKWButtonSwim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKWButtonSwim.h; sourceTree = "<group>"; };
 		1F6C1F7A1CE58118001EC54C /* EKWButtonSwim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKWButtonSwim.m; sourceTree = "<group>"; };
+		1F6C1F7F1CE58A26001EC54C /* EKWAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKWAudioManager.h; sourceTree = "<group>"; };
+		1F6C1F801CE58A26001EC54C /* EKWAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKWAudioManager.m; sourceTree = "<group>"; };
 		1F83A2421CDC6BE2001C364F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		1F83A2431CDC6BE2001C364F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +88,8 @@
 		1F1C6D0D1CE55DC200EBF79A /* AudioTool */ = {
 			isa = PBXGroup;
 			children = (
-				1F1C6D0E1CE55EAE00EBF79A /* AudioPlayTool.h */,
-				1F1C6D0F1CE55EAE00EBF79A /* AudioPlayTool.m */,
+				1F6C1F7F1CE58A26001EC54C /* EKWAudioManager.h */,
+				1F6C1F801CE58A26001EC54C /* EKWAudioManager.m */,
 			);
 			path = AudioTool;
 			sourceTree = "<group>";
@@ -211,8 +211,8 @@
 				1F5419771CDAB0A90063EC6E /* ReadWordCell.m in Sources */,
 				1F54194B1CDA4C2E0063EC6E /* ReadWordView.m in Sources */,
 				1F5419381CDA36AA0063EC6E /* ViewController.m in Sources */,
+				1F6C1F811CE58A26001EC54C /* EKWAudioManager.m in Sources */,
 				1F54197A1CDAB1750063EC6E /* WordModel.m in Sources */,
-				1F1C6D101CE55EAE00EBF79A /* AudioPlayTool.m in Sources */,
 				1F5419511CDA512C0063EC6E /* WordHeaderView.m in Sources */,
 				1F5419351CDA36AA0063EC6E /* AppDelegate.m in Sources */,
 				1F83A2441CDC6BE2001C364F /* UIView+Extension.m in Sources */,

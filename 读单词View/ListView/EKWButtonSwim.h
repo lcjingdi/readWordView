@@ -1,13 +1,3 @@
-
-//
-//  EKWPersonVC.h
-//  EKWStudent
-//
-//  Created by chen on 14-7-11.
-//  Copyright (c) 2014年 ekwing. All rights reserved.
-//
-
-
 /** 按钮上的进度条 */
 #import <UIKit/UIKit.h>
 
